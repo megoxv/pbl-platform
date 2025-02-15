@@ -45,7 +45,7 @@ export function Footer() {
                     <div>
                         <h4 className="font-semibold mb-4">Community</h4>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/megoxv/pbl-platform"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
