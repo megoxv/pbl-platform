@@ -165,6 +165,7 @@ export default function TutorialList({ language }: { language: string }) {
                                     src={tutorial.frontmatter.image}
                                     alt={tutorial.frontmatter.title}
                                     className="object-cover w-full h-full"
+                                    loading="lazy"
                                 />
                                 <Badge
                                     className="absolute top-2 right-2"

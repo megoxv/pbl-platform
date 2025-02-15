@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: 'PBL Platform - Learn Programming by Building Real Projects',
     description: 'Master coding through real-world projects with community-curated tutorials. Learn JavaScript, Python, React & more with hands-on guides. Start building portfolio projects today!',
+    verification: {
+        google: process.env.NEXT_PUBLIC_VERIFICATION_GOOGLE
+    }
 };
 
 export default function RootLayout({

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
+import Image from "next/image";
 
 interface Language {
     name: string;
@@ -113,14 +114,19 @@ export default function Home() {
                                     <Card className="p-6 hover:shadow-lg transition-shadow">
                                         <div className="flex items-center space-x-4">
                                             <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-primary/10">
-                                                <img
+                                                <Image
+                                                    width={32}
+                                                    height={32}
                                                     src={language.icon}
                                                     alt={language.name}
                                                     className="w-8 h-8"
+                                                    loading="lazy"
                                                 />
                                             </div>
                                             <div>
-                                                <h3 className="text-xl font-semibold">{language.name}</h3>
+                                                <h3 className="text-xl font-semibold">
+                                                    {language.name.charAt(0).toUpperCase() + language.name.slice(1).replace(/-/g, ' ')}
+                                                </h3>
                                                 <p className="text-sm text-muted-foreground">
                                                     {language.count} {language.count === 1 ? "Project" : "Projects"}
                                                 </p>

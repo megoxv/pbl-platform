@@ -109,6 +109,7 @@ export default async function TutorialPage({ params }: { params: Promise<{ langu
                     src={data.image}
                     alt={data.title}
                     className="w-full rounded-lg mb-8 aspect-video object-cover"
+                    loading="lazy"
                 />
             )}
             <div className="prose dark:prose-invert max-w-none">
